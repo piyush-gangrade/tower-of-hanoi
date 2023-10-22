@@ -65,17 +65,17 @@ selectRings.addEventListener("change", (e) => {
         }
     }
     switch(selectValue){
-        case 4: minSteps.innerText = "Minimum No: 15";
+        case 4: minSteps.innerText = "Minimum Steps: 15";
         break;
-        case 5: minSteps.innerText = "Minimum No: 31";
+        case 5: minSteps.innerText = "Minimum Steps: 31";
         break;
-        case 6: minSteps.innerText = "Minimum No: 63";
+        case 6: minSteps.innerText = "Minimum Steps: 63";
         break;
-        case 7: minSteps.innerText = "Minimum No: 127";
+        case 7: minSteps.innerText = "Minimum Steps: 127";
         break;
-        case 8: minSteps.innerText = "Minimum No: 255";
+        case 8: minSteps.innerText = "Minimum Steps: 255";
         break;
-        default: minSteps.innerText = "Minimum No: 7";
+        default: minSteps.innerText = "Minimum Steps: 7";
     }
     restartGame();
 })
