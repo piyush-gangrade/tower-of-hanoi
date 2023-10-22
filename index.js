@@ -94,26 +94,6 @@ rings.forEach(element => {
 
 });
 
-// check drag ring inside or not 
-// window.addEventListener("dragover", (e) => {
-//     const dragRingId = e.dataTransfer.getData("text/plain");
-//     const draggableRing = document.getElementById(dragRingId);
-//     const divBox1 = boxes[0].getBoundingClientRect();
-//     const divBox2 = boxes[1].getBoundingClientRect();
-//     const divBox3 = boxes[2].getBoundingClientRect();
-    
-//     if (draggableRing) { // Check if the element exists
-//         if ((e.clientY >= divBox1.top && e.clientY <= divBox1.bottom) &&
-//             ((e.clientX >= divBox1.left && e.clientX <= divBox1.right) ||
-//              (e.clientX >= divBox2.left && e.clientX <= divBox2.right) ||
-//              (e.clientX >= divBox3.left && e.clientX <= divBox3.right))) {
-//                 draggableRing.classList.add("hide");
-//         } else {
-//             draggableRing.classList.remove("hide");
-//         }
-//     }
-// });
-
 
 
 //drag end
@@ -129,12 +109,10 @@ boxes.forEach(box => {
     });
     box.addEventListener('dragleave', (e) => {
         e.preventDefault();
-        //console.log(e.target);
         box.classList.remove("drag-over");
     });
     box.addEventListener('drop', (e) => {
         checkSteps();
-        //console.log(e.target);
         e.preventDefault();
         box.classList.remove("drag-over");
         const id = e.dataTransfer.getData("text/plain");
@@ -153,11 +131,9 @@ boxes.forEach(box => {
                     !box.contains(ring3)) {
                         console.log(box);
                     box.getElementsByClassName("ringBox")[0].appendChild(draggable);
-                    //draggable.classList.remove("hide");
                     checkDraggable();
                 }
                 else if (box.contains(secondRing)) {
-                    //draggable.classList.remove("hide");
                     checkDraggable();
                 }
             }
@@ -168,7 +144,6 @@ boxes.forEach(box => {
                     let secondRing = document.getElementById(ringSecondId);
                     if (draggable == secondRing) {
                         box.getElementsByClassName("ringBox")[0].appendChild(draggable);
-                        //draggable.classList.remove("hide");
                         checkDraggable();
                         checkWin();
                     }
