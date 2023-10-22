@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="textContainer">
+        <h1 id="heading">Tower of Hanoi</h1>
+        <h1 id="win"></h1>
+    </div>
+    <div id="gameSection">
+        <div id="gameBar">
+            <div>
+                <select id="selectRings">
+                    <option value="3" selected="selected">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <span id="steps">Steps: 0</span>
+            </div>
+            <span id="time">Time: 00:00</span>
+            <button id="restart">Restart</button>
+        </div>
+        <div id="gameBox">
+            <div class="box" id="box1">
+                <div class="baseLine"></div>
+                <div class="parallelLine"></div>
+                <div class="ringBox">
+                    <div id="ring8" class="rings hide" draggable="false"></div>
+                    <div id="ring7" class="rings hide" draggable="false"></div>
+                    <div id="ring6" class="rings hide" draggable="false"></div>
+                    <div id="ring5" class="rings hide" draggable="false"></div>
+                    <div id="ring4" class="rings hide" draggable="false"></div>
+                    <div id="ring3" class="rings" draggable="false"></div>
+                    <div id="ring2" class="rings" draggable="false"></div>
+                    <div id="ring1" class="rings" draggable="true" style="cursor: pointer"></div>
+                </div>
+            </div>
+            <div class="box" id="box2">
+                <div class="baseLine"></div>
+                <div class="parallelLine"></div>
+                <div class="ringBox">
+                </div>
+            </div>
+            <div class="box" id="box3">
+                <div class="baseLine"></div>
+                <div class="parallelLine"></div>
+                <div class="ringBox"></div>
+            </div>
+            <div id="minSteps">Minimum steps: 7</div>
+        </div>
+    </div>
+
+    <div id="aboutGame">
+        <h1 >How to Play</h1>
+        <ul>
+            <li>Only one disk can be moved at a time.</li>
+            <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack. In other words, a disk can only be moved if it is the uppermost disk on a stack.</li>
+            <li>No larger disk may be placed on top of a smaller disk.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div>
+            © Copyright:- Made by Piyush Gangrade.
+        </div>
+    </footer>
+
+    <script src="index.js" type="text/javaScript"></script>
+</body>
+
+</html>

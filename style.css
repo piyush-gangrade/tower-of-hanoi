@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#textContainer {
+    height: 20vh;
+    margin: 20px 0px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#win {
+    height: 40px;
+}
+
+#gameSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#gameBar {
+    color: #ffffff;
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 15px 0px;
+}
+
+#steps {
+    margin-left: 8px;
+}
+
+#time {
+    margin-right: 50px;
+}
+
+#restart {
+    margin-right: 4px;
+    padding: 3px 5px;
+}
+
+#gameBox {
+    width: 50%;
+    height: 66%;
+    background-color: #ffffff;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+#minSteps{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 3px 10px;
+}
+
+.box {
+    border: 2px solid black;
+    width: 22%;
+    height: 62%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: end;
+    padding: 12px;
+    position: relative;
+}
+
+.baseLine {
+    width: 90%;
+    height: 7px;
+    background-color: black;
+    border-radius: 5px;
+    /* position: absolute;
+    bottom: 16px; */
+}
+
+.parallelLine{
+    height: 72%;
+    width: 7px;
+    background-color: #000000;
+    position: absolute;
+    top: 20%;
+    left: 48%;
+}
+
+.ringBox {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 82%;
+    z-index: 1;
+}
+
+#ring1 {
+    background-color: #FF0000;
+    width: 44%;
+    height: 14px;
+    border-radius: 7px;
+
+}
+
+#ring2 {
+    background-color: #4e8210;
+    width: 52%;
+    height: 14px;
+    border-radius: 7px;
+}
+
+#ring3 {
+    background-color: #F4A309;
+    width: 60%;
+    height: 14px;
+    border-radius: 7px;
+}
+
+#ring4 {
+    background-color: #FB04E0;
+    width: 68%;
+    height: 15px;
+    border-radius: 7px;
+}
+
+#ring5 {
+    background-color: #0000FF;
+    width: 76%;
+    height: 15px;
+    border-radius: 7px;
+
+}
+
+#ring6 {
+    background-color: #9D11EC;
+    width: 84%;
+    height: 15px;
+    border-radius: 7px;
+}
+
+#ring7 {
+    background-color: #EC097E;
+    width: 92%;
+    height: 15px;
+    border-radius: 7px;
+}
+
+#ring8 {
+    background-color: #04BCF4;
+    width: 100%;
+    height: 15px;
+    border-radius: 7px;
+}
+
+.hide {
+    display: none;
+}
+
+.drag-over {
+    border: dashed 3px red;
+}
+
+#aboutGame {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 39vh;
+}
+
+#aboutGame h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#aboutGame ul {
+    font-family: 'Ubuntu', sans-serif;
+    width: 46%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 19px;
+}
+
+footer{
+    background-color: rgb(82, 82, 83);
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #textContainer{
+        height: 13vh;
+    }
+    #gameSection{
+        height: 55vh;
+    }
+    #gameBar {
+        width: 95%;
+    }
+
+    #gameBox {
+        width: 80%;
+        height: 57%;
+    }
+    #aboutGame ul {
+        width: 75%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    #gameBar {
+        width: 100%;
+    }
+
+    #gameBox {
+        width: 70%;
+        height: 57%;
+    }
+    #aboutGame ul {
+        width: 66%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1180px) {
+    #gameBar {
+        width: 90%;
+    }
+
+    #gameBox {
+        width: 65%;
+        height: 62%;
+    }
+
+    #aboutGame ul {
+        width: 55%;
+    }
+}
