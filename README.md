@@ -23,7 +23,7 @@ To play the game, you must follow these three rules:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/tower-of-hanoi.git
+    git clone [https://github.com/piyush-gangrade/tower-of-hanoi.git]
     cd tower-of-hanoi
     ```
 
